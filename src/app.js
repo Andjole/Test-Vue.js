@@ -4,8 +4,19 @@ window.vueApp = new Vue({
 	text: 'Hello World from Vue!'
   },
    methods: {
-		change_text : function () {
-			vueApp.text = 'Hello World is overrated!'
-		}
+	changeText : function () {
+		vueApp.text = 'Hello World is overrated!'
+	}
+   }
+});
+window.vueAppDue = new Vue({
+  el: '#example-2',
+  data: {
+    counter: 0
+  },
+   methods: {
+	count : function () {
+	vueAppDue.counter++
+	}
    }
 });
