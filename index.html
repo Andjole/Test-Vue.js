@@ -1,19 +1,12 @@
 <html>
 	<head>
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="src/vue.js"></script>
 	</head>
 	<body>
-		<div id="vue-app">
+		<div id="example-1">
+			 <button v-on:click="change_text()">Click 1</button>
 			{{ text }}
 		</div>
-		 
-		<script>
-		window.vueApp = new Vue({
-		  el: '#vue-app',
-		  data: {
-			text: 'Hello World from Vue!'
-		  }
-		});
-		</script>
+		<script src="src/app.js"></script>
 	</body>
 </html>
