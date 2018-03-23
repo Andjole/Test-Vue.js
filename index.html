@@ -1,5 +1,19 @@
-<!DOCTYPE html>
-<html lang="it-IT">
-<head></head>
-<body>Ciao</body>
+<html>
+	<head>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="vue-app">
+			{{ text }}
+		</div>
+		 
+		<script>
+		window.vueApp = new Vue({
+		  el: '#vue-app',
+		  data: {
+			text: 'Hello World from Vue!'
+		  }
+		});
+		</script>
+	</body>
 </html>
